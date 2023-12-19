@@ -1,3 +1,6 @@
+THIS IS A FORK FROM LITTLEGIANT!
+Only for SilverStripe 5 Support
+
 # SilverStripe Security Theme
 
 [![Latest Stable Version](https://poser.pugx.org/littlegiant/silverstripe-security-theme/v/stable)](https://packagist.org/packages/littlegiant/silverstripe-security-theme)
@@ -9,7 +12,7 @@ Sick of styling your admin login form? Me too, use this instead.
 ## Installation
 
 ```shell
-composer require littlegiant/silverstripe-security-theme
+composer require moritz-sauer-13/silverstripe-security-theme
 ```
 
 ## Usage
