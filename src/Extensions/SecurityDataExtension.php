@@ -24,7 +24,7 @@ class SecurityDataExtension extends DataExtension
          */
         Requirements::clear();
 
-        Requirements::css('littlegiant/silverstripe-security-theme:client/dist/index.css');
+        Requirements::css('moritz-sauer-13/silverstripe-security-theme:client/dist/index.css');
 
         self::getCSSOverrides();
     }
