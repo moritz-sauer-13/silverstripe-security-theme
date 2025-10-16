@@ -4,4 +4,4 @@ Name: little-giant-silverstripe-security-theme
 
 SilverStripe\Security\Security:
   extensions:
-    - LittleGiant\SilverStripeSecurityTheme\Extensions\SecurityDataExtension
+    - LittleGiant\SilverStripeSecurityTheme\Extensions\SecurityExtension

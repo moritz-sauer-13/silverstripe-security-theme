@@ -2,7 +2,7 @@
 
 namespace LittleGiant\SilverStripeSecurityTheme\Extensions;
 
-use SilverStripe\ORM\DataExtension;
+use SilverStripe\Core\Extension;
 use SilverStripe\Security\Security;
 use SilverStripe\View\Requirements;
 
@@ -10,7 +10,7 @@ use SilverStripe\View\Requirements;
  * Class SecurityDataExtension
  * @package LittleGiant\SilverStripeSecurityTheme\Extensions
  */
-class SecurityDataExtension extends DataExtension
+class SecurityExtension extends Extension
 {
     /**
      * @desc Add the client assets to the controller.
