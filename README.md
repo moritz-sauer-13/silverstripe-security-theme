@@ -1,5 +1,10 @@
 THIS IS A FORK FROM LITTLEGIANT!
-Only for SilverStripe 5 Support
+Only for SilverStripe 5 and 6 Support
+
+For tailwindcss support please use Version 2.X
+you also need to add the templates as source in cour tailwind.css file like this:
+@source "../../vendor/moritz-sauer-13/silverstripe-security-theme/templates/LittleGiant/SilverStripeSecurityTheme/**/*.ss";
+
 
 # SilverStripe Security Theme
 
