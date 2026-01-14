@@ -3,5 +3,6 @@ Name: little-giant-silverstripe-security-theme
 ---
 
 SilverStripe\Security\Security:
+  block_css: false
   extensions:
     - LittleGiant\SilverStripeSecurityTheme\Extensions\SecurityExtension
