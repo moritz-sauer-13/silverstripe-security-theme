@@ -9,6 +9,7 @@
     </div>
   </div>
   <div class="text-sm/6">
-    <label for="$ID"><%t Security.REMEMBERME %></label>
+    <label for="$ID"><%t SilverStripe\Security\Member.KEEP_ME_SIGNED_IN count=$LoginTokenExppiryDays %></label>
+    <p id="comments-description" class="text-md"><%t SilverStripe\Security\Member.KEEP_ME_SIGNED_IN_TOOLTIP count=$LoginTokenExppiryDays %></p>
   </div>
 </div>

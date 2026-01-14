@@ -2,6 +2,7 @@
 
 namespace LittleGiant\SilverStripeSecurityTheme\Helpers;
 
+use SilverStripe\Security\RememberLoginHash;
 use SilverStripe\Security\Security;
 use SilverStripe\View\TemplateGlobalProvider;
 
@@ -18,6 +19,7 @@ class GlobalTemplateHelpers implements TemplateGlobalProvider
     {
         return [
             'SecurityLogo' => 'getSecurityLogo',
+            'LoginTokenExppiryDays' => 'getLoginTokenExppiryDays',
         ];
     }
 
@@ -34,5 +36,10 @@ class GlobalTemplateHelpers implements TemplateGlobalProvider
         }
 
         return null;
+    }
+
+    public static function getLoginTokenExppiryDays(): int
+    {
+        return RememberLoginHash::config()->uninherited('token_expiry_days');
     }
 }
