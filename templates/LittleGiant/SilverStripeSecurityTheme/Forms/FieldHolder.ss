@@ -1,29 +1,19 @@
 <% if $Type == 'hidden' %>
   {$Field}
 <% else %>
-  <div id="{$Name}" class="l-sst-form-group l-sst-form-group--{$Type}<% if $Message %> has-message<% end_if %>">
+  <div id="{$Name}" class="<% if $Message %> has-message<% end_if %>">
     <% if $Type == 'checkbox' %>
       <% include LittleGiant/SilverStripeSecurityTheme/Forms/Fields/Checkbox %>
     <% else_if $Type == 'dropdown' %>
-      <div class="l-sst-form-group__item">
-        <div class="l-sst-form-group__field">
-          <% include LittleGiant/SilverStripeSecurityTheme/Forms/Fields/Select %>
-          <label for="{$ID}" class="c-sst-label">{$Title}</label>
-        </div>
-      </div>
+      <% include LittleGiant/SilverStripeSecurityTheme/Forms/Fields/Select %>
+      <label for="{$ID}">{$Title}</label>
     <% else %>
-      <div class="l-sst-form-group__item">
-        <div class="l-sst-form-group__field">
-          <label for="{$ID}" class="c-sst-label">{$Title}</label>
-          {$Field}
-        </div>
-      </div>
+      <label for="{$ID}">{$Title}</label>
+      {$Field}
     <% end_if %>
 
     <% if $Description %>
-      <div class="l-sst-form-group__description">
-        <p>{$Description}</p>
-      </div>
+      <p>{$Description}</p>
     <% end_if %>
   </div>
 <% end_if %>
