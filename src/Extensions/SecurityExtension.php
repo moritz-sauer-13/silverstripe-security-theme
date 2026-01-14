@@ -23,8 +23,10 @@ class SecurityExtension extends Extension
          * with the styling/functionality of the page.
          */
         Requirements::clear();
-
-        Requirements::css('moritz-sauer-13/silverstripe-security-theme:client/dist/index.css');
+        
+        if(!$config->block_css){
+            Requirements::css('moritz-sauer-13/silverstripe-security-theme:client/dist/index.css');
+        }
 
         self::getCSSOverrides();
     }
