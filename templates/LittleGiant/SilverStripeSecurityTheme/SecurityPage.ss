@@ -15,7 +15,7 @@
 <div class="w-full min-h-[calc(100svh-(var(--spacing)*25))] py-5 flex items-center justify-center"
      <% if $SiteConfig.LoginImage %>style="background-image: url($SiteConfig.LoginImage.FocusFill(2560,1440).Link); background-position: $SiteConfig.LoginImage.FocusPosition; background-repeat: no-repeat; background-size: cover"<% end_if %>>
   <div class="bg-white max-w-lg dark:bg-gray-800 dark:text-white p-5 md:p-8 lg:p-10 rounded-2xl shadow-lg flex flex-col gap-4">
-    <h1 class="text-4xl font-semibold">{$Title}</h1>
+    <h1 class="text-4xl font-semibold dark:text-white">{$Title}</h1>
     <% if $Form %>
       <% with $Form %>
         <% include LittleGiant/SilverStripeSecurityTheme/Form %>
